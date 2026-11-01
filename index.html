@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevBridge — API Mock & Token Extractor</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+    }
+    .hero {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(79,110,247,0.15);
+      color: #818cf8;
+      border: 1px solid rgba(79,110,247,0.3);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.8rem;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #e2e8f0, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.sub {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      max-width: 560px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    .cta {
+      display: inline-block;
+      background: #4f6ef7;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .cta:hover { background: #3b55e6; }
+    .features {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1a1d27;
+      border: 1px solid #2a2d3a;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .card .icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 8px; color: #e2e8f0; }
+    .card p { font-size: 0.85rem; color: #64748b; line-height: 1.5; }
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #334155;
+      font-size: 0.85rem;
+    }
+    footer a { color: #4f6ef7; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="badge">Free Chrome Extension · Developer Tools</div>
+    <h1>Stop copy-pasting<br/>into AI tools</h1>
+    <p class="sub">
+      DevBridge captures live network requests in DevTools and generates
+      MSW, Express, and json-server mocks in one click.
+    </p>
+    <a class="cta" href="https://chrome.google.com/webstore" target="_blank">
+      Add to Chrome — It's Free
+    </a>
+  </div>
+
+  <div class="features">
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>One-Click Mock Generation</h3>
+      <p>Captures full request + response body. Generates MSW, Express, json-server, or fetch-mock code instantly.</p>
+    </div>
+    <div class="card">
+      <div class="icon">▶</div>
+      <h3>Request Replay</h3>
+      <p>Edit headers, body and URL then re-fire any captured request directly from DevTools.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⇄</div>
+      <h3>Response Diff</h3>
+      <p>Compare two captures of the same endpoint and see exactly what changed in the JSON.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🚦</div>
+      <h3>Request Intercept</h3>
+      <p>Create rules that replace live API responses with your mock data — no code changes needed.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⚠</div>
+      <h3>Stale Mock Detection</h3>
+      <p>Alerts you when the live API response no longer matches your saved mock snapshot.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>Design Token Extractor</h3>
+      <p>Click any element on a live site to extract colors, spacing, typography and Tailwind classes.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      DevBridge · All data stays on your device · No tracking · No accounts
+      &nbsp;·&nbsp;
+      <a href="./privacy-policy.html">Privacy Policy</a>
+    </p>
+  </footer>
+
+</body>
+</html>
